@@ -1,0 +1,7 @@
+# https://github.com/AlexxIT/go2rtc#module-api for other configuration examples
+# Example
+streams:
+    dahua:
+        - 'rtsp://user:password@192.168.1.199:554/cam/realmonitor?channel=1&subtype=0'
+    linux_webcam:
+        - ffmpeg:device?video=0&video_size=1920x1080#video=h264

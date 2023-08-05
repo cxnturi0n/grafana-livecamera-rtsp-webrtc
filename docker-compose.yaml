@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  go2rtc:
+    image: alexxit/go2rtc
+    container_name: go2rtc
+    network_mode: host       # important for WebRTC, HomeKit, UDP cameras
+    privileged: true         # only for FFmpeg hardware transcoding
+    restart: unless-stopped  # autorestart on fail or config change from WebUI
+    environment:
+      - TZ=Europe/Rome  # timezone in logs
+    volumes:
+      - ./go2rtc-config:/config   # folder for go2rtc.yaml file (edit from WebUI)
+      
+  grafana:
+    build: './grafana'
+    container_name: grafana
+    volumes:
+      - grafana_data:/var/lib/grafana/data
+    ports:
+      - "3000:3000" 
+    environment:
+     - GF_PANELS_DISABLE_SANITIZE_HTML=true
+
+volumes:
+  grafana_data: {}
