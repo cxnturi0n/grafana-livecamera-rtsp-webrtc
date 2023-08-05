@@ -18,8 +18,5 @@ services:
       - grafana_data:/var/lib/grafana/data
     ports:
       - "3000:3000" 
-    environment:
-     - GF_PANELS_DISABLE_SANITIZE_HTML=true
-
 volumes:
   grafana_data: {}
