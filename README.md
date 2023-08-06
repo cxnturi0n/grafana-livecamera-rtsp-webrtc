@@ -12,6 +12,6 @@ In this repository, I demonstrate how you can in 1 minute, see your live camera 
       src="http://localhost:1984/stream.html?src=dahua&mode=webrtc">
    </iframe>
 4. Launch go2rtc and Grafana in separate containers using ```docker-compose up -d```.
-5. Access the Grafana dashboard at http://localhost:3000 and the go2rtc web UI at http://localhost:1984.
+5. Access the Grafana dashboard at http://localhost:3000/d/b303f51a-4216-43f3-a57d-0e0d4e9a42bb/livecamerademodashboard?orgId=1 and the go2rtc web UI at http://localhost:1984.
 
 
