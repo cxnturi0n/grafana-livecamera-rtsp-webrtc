@@ -1,6 +1,6 @@
 If you have IP cameras that stream video feed over RTSP or have video captured from your laptop's webcam, and you wish to visualize this content in real-time with extremely low latency, securely over TLS, within your web browser or on a grafana dashboard because maybe you want to build an home monitoring dashboard, you can configure *go2rtc*, a server that provides the shortest streaming latency possible and is effortless to set up on any operating system. You can checkout this fantastic project on its official GitHub repository: https://github.com/AlexxIT/go2rtc.
 
-**Demo:** Grafana dashboard showing my home ip camera live feed, on the left I captured the video from a webcam to show you that the latency is really low.
+**Demo:** Grafana dashboard showing my home ip camera live feed, on the left I captured the video from a webcam to show you that the latency is imperceptible.
 
 https://github.com/cxnturi0n/grafana-livecamera-rtsp-webrtc/assets/75443422/e8e76821-bb4c-42e5-a239-6d537ad5efd6
 
